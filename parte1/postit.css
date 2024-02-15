@@ -1,0 +1,84 @@
+body {
+  background-color: rgb(117, 117, 117);
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Indie Flower", cursive;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.post-it1,
+.post-it3,
+.post-it7 {
+  height: 200px;
+  width: 260px;
+  background: linear-gradient(to top, #fefecd, #bebe91);
+  margin: 5px;
+  box-shadow: 4px 4px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 10deg;
+  z-index: 1;
+}
+
+.post-it2,
+.post-it4,
+.post-it5 {
+  height: 200px;
+  width: 260px;
+  background: linear-gradient(to top, #9696b9, #c6c6f4);
+  margin: 10px;
+  box-shadow: 4px 4px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: -3deg;
+  z-index: 1;
+}
+
+.post-it6,
+.post-it8 {
+  height: 200px;
+  width: 260px;
+  background: linear-gradient(to top, #8fb190, #c9f9cb);
+  margin: 10px;
+  box-shadow: 4px 4px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 9deg;
+  z-index: 1;
+}
+
+/*-------------------animazioni*--------------------*/
+
+div {
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0.5s ease-out;
+}
+
+.post-it1:hover,
+.post-it3:hover,
+.post-it7:hover {
+  transform: translate(0, -30px) rotate(-10deg) scale(1.3);
+  box-shadow: 0px 8px 50px;
+  z-index: 2;
+}
+
+.post-it2:hover,
+.post-it4:hover,
+.post-it5:hover {
+  transform: translate(0, -20px) rotate(3deg) scale(1.3);
+  box-shadow: 0px 8px 50px;
+  z-index: 2;
+}
+
+.post-it6:hover,
+.post-it8:hover {
+  transform: translate(0, -20px) rotate(-9deg) scale(1.3);
+  box-shadow: 0px 8px 50px;
+  z-index: 2;
+}
